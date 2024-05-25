@@ -1,4 +1,4 @@
-class Pessoa:
+class Trouxa:
     def __init__(self, nome, cpf):
         self.nome = nome
         self.__cpf = cpf
@@ -13,11 +13,3 @@ class Pessoa:
         return self.__cpf
 
 # Criação classe Mae que herda atributos da classe Pessoa
-class Mae(Pessoa):
-    def __init__(self, nome, cpf, corPele):
-        super().__init__(nome, cpf)
-        self.corPele = corPele
-
-    def dançar(self):
-        return f'{self.nome} está dançando.'
-    
